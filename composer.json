@@ -3,7 +3,8 @@
         "google-gemini-php/client": "^2.7",
         "symfony/http-client": "^7.4",
         "nyholm/psr7": "^1.8",
-        "psr/http-client": "^1.0"
+        "psr/http-client": "^1.0",
+        "openai-php/client": "^0.20.0"
     },
     "config": {
         "allow-plugins": {

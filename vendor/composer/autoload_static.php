@@ -10,6 +10,7 @@ class ComposerStaticInit1cb2c092751c6372c73b66cbab12c407
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         'e4c9b2466af4057cc73ca0bb2fbccd8a' => __DIR__ . '/..' . '/google-gemini-php/client/src/Gemini.php',
+        '61ba3e92ef91a7a0f1cc260ebd9290e4' => __DIR__ . '/..' . '/openai-php/client/src/OpenAI.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -27,12 +28,17 @@ class ComposerStaticInit1cb2c092751c6372c73b66cbab12c407
             'Psr\\Http\\Client\\' => 16,
             'Psr\\Container\\' => 14,
         ),
+        'O' => 
+        array (
+            'OpenAI\\' => 7,
+        ),
         'N' => 
         array (
             'Nyholm\\Psr7\\' => 12,
         ),
         'H' => 
         array (
+            'Http\\Message\\MultipartStream\\' => 29,
             'Http\\Discovery\\' => 15,
         ),
         'G' => 
@@ -75,9 +81,17 @@ class ComposerStaticInit1cb2c092751c6372c73b66cbab12c407
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'OpenAI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/openai-php/client/src',
+        ),
         'Nyholm\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/nyholm/psr7/src',
+        ),
+        'Http\\Message\\MultipartStream\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/multipart-stream-builder/src',
         ),
         'Http\\Discovery\\' => 
         array (
