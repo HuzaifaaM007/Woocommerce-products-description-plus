@@ -25,5 +25,14 @@ class WCPDP_Assets
             WC_PRODUCTS_DESCRIPTION_PLUS_VERSION,
             'all'
         );
+
+        wp_localize_script(
+            'wcpdp-scripts',
+            'WCPDP_ai_nonce',
+            array(
+                'ajax_url' => admin_url('admin-ajax.php'),
+                'nonce' => wp_create_nonce('wcpdp_gen_desc_nonce')
+            ),
+        );
     }
 }
