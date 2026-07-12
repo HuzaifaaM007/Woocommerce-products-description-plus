@@ -58,6 +58,50 @@ class WCPDP_Admin
                 'type' => 'sectionend',
                 'id' => 'wcpdp_settings_end'
             ),
+            array(
+                'title' => __('Description settings ', 'wc-products-description-plus'),
+                'type' => 'title',
+                'id' => 'wcpdp_desc_settings'
+            ),
+            array(
+                'title' => __('Generate detailed description', 'wc-products-description-plus'),
+                'type' => 'checkbox',
+                'id' => 'wcpdp_gen_detailed_desc',
+                'desc' => __('Generate detailed description for products', 'wc-products-description-plus'),
+                'default' => 'no',
+                'desc_tip' => true
+            ),
+
+            array(
+                'title' => __('Add Headings in description', 'wc-products-description-plus'),
+                'type' => 'checkbox',
+                'id' => 'wcpdp_add_headings',
+                'desc' => __('Add headings in the description text ', 'wc-products-description-plus'),
+                'default' => 'no',
+                'desc_tip' => true
+            ),
+            array(
+                'title' => __('Add Tables', 'wc-products-description-plus'),
+                'type' => 'checkbox',
+                'id' => 'wcpdp_add_tables',
+                'desc' => __('Add tables in description', 'wc-products-description-plus'),
+                'default' => 'no',
+                'desc_tip' => true
+            ),
+            array(
+                'title' => __('Generate description in bullet form', 'wc-products-description-plus'),
+                'type' => 'checkbox',
+                'id' => 'wcpdp_gen_bullets_desc',
+                'desc_tip' => true,
+                'desc' => __('Generate description in bullet form for the products ', 'wc-products-description-plus'),
+                'default' => 'no',
+
+            ),
+
+            array(
+                'type' => 'sectionend',
+                'id' => 'wcpdp_desc_settings_end'
+            ),
         );
         return $settings;
     }
