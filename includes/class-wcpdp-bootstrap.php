@@ -40,7 +40,8 @@ class WCPDP_Bootstrap
         $this->wcpdp_loader->add_action('wp_ajax_wcpdp_generate_description_ajax_request', $wcpdp_ajax_req, 'wcpdp_generate_description_ajax_request');
 
         $wcpdp_assets = new WCPDP_Assets();
-        $this->wcpdp_loader->add_action('admin_enqueue_scripts', $wcpdp_assets, 'wcpdp_enqueue_assets');
+        // $this->wcpdp_loader->add_action('admin_enqueue_scripts', $wcpdp_assets, 'wcpdp_enqueue_assets');
+        $this->wcpdp_loader->add_action('admin_enqueue_scripts', $wcpdp_assets, 'wcpdp_enqueue_admin_assets');
     }
 
     function define_wp_hooks()

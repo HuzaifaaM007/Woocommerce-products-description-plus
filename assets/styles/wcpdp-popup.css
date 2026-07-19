@@ -1,0 +1,7 @@
+.wcpdp-dynamic-popup {
+    position: fixed;
+    right: 20px;
+    max-width: 360px;
+    z-index: 100000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}

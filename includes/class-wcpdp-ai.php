@@ -25,6 +25,17 @@ class WCPDP_AI
         $add_headings       = get_option('wcpdp_add_headings')  === 'yes';
         $add_tables         = get_option('wcpdp_add_tables')  === 'yes';
         $add_bullet_points  = get_option('wcpdp_gen_bullets_desc')  === 'yes';
+        $custom_prompt      = get_option('wcpdp_custom_ai_prompt');
+
+        if (!empty($custom_prompt)) {
+            $product_data_json = json_encode($product_data);
+            $prompt = $custom_prompt . 'products data :' . $product_data_json;
+            $prompt .= "Respond ONLY in this exact format, with no extra commentary:\n\n";
+            $prompt .= "SHORT_DESCRIPTION:\n[short description here]\n\n";
+            $prompt .= "FULL_DESCRIPTION:\n[full description here]";
+
+            return $prompt;
+        }
 
         if (!empty($product_data['categories'])) {
             $categories_names = $product_data['categories'];

@@ -55,6 +55,35 @@ class WCPDP_Admin
                 'desc_tip' => true
             ),
             array(
+                'title' => __('Enable Custom Prompt', 'wc-products-description-plus'),
+                'type' => 'checkbox',
+                'id' => 'wcpdp_enable_custom_prompt',
+                'desc' => __('Enable custom prompt ', 'wc-products-description-plus'),
+                'default' => 'no',
+                'desc_tip' => true
+            ),
+            array(
+                'title' => __('Custom Prompt', 'wc-products-description-plus'),
+                'type' => 'textarea',
+                'id' => 'wcpdp_custom_ai_prompt',
+                'default' => '',
+                'desc_tip' => false,
+                'desc' => __('<strong>Leave empty to use the default prompt.</strong><br><br>
+
+        This prompt is used as the instructions for the AI. Your product data is automatically appended, so you do <strong>not</strong> need to include product information yourself.<br><br>
+
+        <strong>Important:</strong><br>
+        • Do not include product data placeholders.<br>
+        • Do not change the required output format.<br>
+        • The AI must respond exactly as follows:<br><br>
+
+        <code>SHORT_DESCRIPTION:</code><br>
+        <code>[short description]</code><br><br>
+
+        <code>FULL_DESCRIPTION:</code><br>
+        <code>[full description]</code><br><br>', 'wc-products-description-plus'),
+            ),
+            array(
                 'type' => 'sectionend',
                 'id' => 'wcpdp_settings_end'
             ),
